@@ -27,6 +27,11 @@ app.use("/api", userRoutes);
 app.use("/api", postRoutes);
 app.use("/api", commentRoutes);
 
+//home route
+app.get("/", (req, res) => {
+  res.send("Welcome to the backend server");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`server is running on port ${process.env.PORT}`);
 });
