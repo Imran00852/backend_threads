@@ -15,7 +15,7 @@ const app = express();
 //parse json data
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: FRONTEND_URL,
     credentials: true,
   })
 );
